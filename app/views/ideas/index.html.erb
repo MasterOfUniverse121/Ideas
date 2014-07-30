@@ -1,0 +1,17 @@
+<div class="stripe">
+        <h1>Ideas:</h1>
+           <% @idea.each do |idea| %>
+            <ul>
+              <li>
+                 <h4><%= idea.description %></h4>
+                 <a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/ideas/<%= idea.id %>"><b>show</b></a> |
+                 <a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/ideas/<%= idea.id %>/edit"><b>edit</b></a> |
+                 <a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/ideas/<%= idea.id %>/destroy"><b>destroy</b></a> 
+              </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>
